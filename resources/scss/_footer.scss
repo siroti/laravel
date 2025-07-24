@@ -1,0 +1,29 @@
+@use "variables" as *;
+footer {
+  background-color: $primary-footer; 
+  color: $secondary-footer;
+  @if $primary-footer == white or $primary-footer == #FFFFFF {
+    border-top: 1px solid #d6d6d6;
+  }
+  a {
+    color: $secondary-footer; 
+    text-decoration: none;
+    &:hover {
+      color: $hover-footer; 
+    }
+  }
+  .sub100{
+    a {
+      color: $sub100; 
+    }
+  }
+}
+.rodapeSvg {
+  width: 190px;
+  height: auto;
+
+  &.footerLogo { 
+    filter: brightness(0) invert(1) !important
+  }
+
+}

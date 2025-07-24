@@ -1,0 +1,29 @@
+{
+    "name": "meu_projeto",
+    "version": "1.0.0",
+    "$schema": "https://json.schemastore.org/package.json",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "build:silent": "node build-silent.cjs",
+        "dev": "vite",
+        "preview": "vite preview",
+        "test": "npm run build"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.8.2",
+        "bootstrap": "^5.3.7",
+        "laravel-vite-plugin": "^1.2.0",
+        "postcss": "^8.4.38",
+        "postcss-loader": "^8.1.1",
+        "sass": "^1.89.2",
+        "sass-embedded": "^1.69.5",
+        "vite": "^6.2.4"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "^5.3.7"
+    }
+}

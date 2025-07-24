@@ -1,0 +1,33 @@
+@use "variables" as *;
+
+@for $i from 2 through 4 {
+  .mb-#{10 * $i} { 
+    margin-bottom: 10px * $i; 
+  }
+}
+
+@for $i from 2 through 4 {
+  .m-#{10 * $i} { 
+    margin-bottom: 10px * $i; 
+  }
+}
+
+.section-padding {
+  padding-top: 110px;
+  padding-bottom: 110px;
+
+  // Responsive
+  @media #{$tablet-device} {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media #{$large-mobile} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section-padding-top-300 {
+  padding-top: 300px;
+}

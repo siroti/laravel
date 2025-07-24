@@ -1,0 +1,77 @@
+@use "variables" as *;
+header {
+  background-color: $primary-header; 
+  color: $secondary-header;
+ /* @if $primary-header == white or $primary-header == #FFFFFF {
+    border-bottom: 1px solid #d6d6d6;
+  }*/
+  .nav-link {
+    &:hover {
+      color: $hover-header;  
+    }
+  }
+  .menu-icon {
+    width: 34px;
+    height: 25px;
+  }
+
+  .menu-line {
+    height: 3px;
+    background-color: var(--cor-topo-font);
+    transition: transform 0.3s ease; 
+  }
+
+  .menu-icon:hover .menu-line {
+    background-color: var(--bs-secondary);
+  }
+  
+
+  .menu-icon:hover .menu-line:nth-child(1) {
+    transform: translateX(5px); 
+  }
+
+  .menu-icon:hover .menu-line:nth-child(3) {
+    transform: translateX(10px); 
+  }
+
+  .menu-icon:hover .menu-line:nth-child(2) {
+    transform: translateX(0);
+  }
+
+   .menu-line:nth-child(1) {
+    width: 29px;
+  }
+
+  .menu-line:nth-child(2) {
+    width: 34px;
+  }
+
+  .menu-line:nth-child(3) {
+    width: 23px;
+  }
+}
+
+
+.logoSvg {
+  width: auto;
+  height: 45px;
+
+  &.headerLogo { 
+    filter: brightness(0) invert(1) !important
+  }
+
+  &.offcanvasLogo { 
+    padding:5px 0
+  }
+
+  @media (max-width: 992px) {
+    height: 38px !important;
+  }
+
+  @media (max-width: 768px) {
+    height: 30px !important;
+     &.offcanvasLogo { 
+        padding:0px 0px
+      }
+  }
+}

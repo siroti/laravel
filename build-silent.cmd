@@ -1,0 +1,1 @@
+vite build 2>&1 | findstr /VI "deprecation warning" | findstr /VI "warning:" | findstr /VI "More info" | findstr /VI "Use color.mix instead." | findstr /VI "Use math.unit instead." | findstr /VI "color.channel(" | findstr /VI "https://sass-lang.com/d/import"
