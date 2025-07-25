@@ -1,7 +1,6 @@
 {
     "name": "meu_projeto",
     "version": "1.0.0",
-    "$schema": "https://json.schemastore.org/package.json",
     "private": true,
     "type": "module",
     "scripts": {
@@ -20,7 +19,7 @@
         "postcss-loader": "^8.1.1",
         "sass": "^1.89.2",
         "sass-embedded": "^1.69.5",
-        "vite": "^6.2.4",
+        "vite": "^5.4.8",
         "rollup": "4.18.0"
     },
     "dependencies": {
