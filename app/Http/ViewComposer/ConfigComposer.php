@@ -8,7 +8,8 @@ class ConfigComposer
 {
     public function compose(View $view)
     {
-        $host = request()->getHost();
+        //$host = request()->getHost();
+        $host = 'site.localhost';
        // $client = session('client');
         $config = config('clients.' .$host);
         session(['client' => $host]);

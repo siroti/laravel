@@ -22,15 +22,10 @@ class ClientConfiguration
         $root = app('request')->root();
         $root = str_replace(['https://', 'http://', 'www.'], '', $root);
 
-        //
-        //        if (!Config::has("clients.$root")) {
-                    // $root = 'sitemodelo.localhost';
-        //        }
-        //      Log::info($root);
 
         if (!Config::has("clients.$root")) {
             $root = '';
-            //$root = 'opcaoimoveis.com.br';
+            //$root = 'site.localhost';
         }
 
         Log::info($root);
